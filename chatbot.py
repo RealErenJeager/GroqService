@@ -20,7 +20,7 @@ class ChatRequest(BaseModel):
 def ask_groq(req: ChatRequest):
     try:
         payload = {
-            "model": "llama3-70b-8192",
+            "model": "llama-3.3-70b-versatile",
             "messages": [
                 {"role": "system", "content": "You are a tech expert. Answer only technology-related questions."},
                 {"role": "user", "content": req.question}
